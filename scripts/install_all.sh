@@ -2,4 +2,6 @@
 
 which curl || apt install curl
 
-curl https://raw.githubusercontent.com/mbelloiseau/k8s-lab/main/scripts/install_common.sh | bash
+for x in common docker kubernetes ; do
+  curl https://raw.githubusercontent.com/mbelloiseau/k8s-lab/main/scripts/install_${x}.sh | bash
+done
